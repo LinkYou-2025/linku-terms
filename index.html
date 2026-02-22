@@ -1,47 +1,214 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>링큐 이용약관 및 개인정보처리방침</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>이용약관 | 링큐</title>
 
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" href="/favicon.ico" />
 
 <style>
-body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.8; }
-h1 { border-bottom: 2px solid #000; padding-bottom: 10px; }
-h2 { margin-top: 40px; }
-nav a { margin-right: 15px; }
-.section { margin-top: 60px; }
+/* 기본 세팅 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+               "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #1d1d1f;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 760px;
+  margin: 120px auto;
+  padding: 0 24px;
+}
+
+/* 상단 탭 (TODO: 개인정보처리방침 분리해서 올려야댐) */
+.tab-menu {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 72px;
+  font-size: 17px;
+}
+
+.tab-menu a {
+  text-decoration: none;
+  color: #8e8e93;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab-menu a:hover {
+  color: #000;
+}
+
+.tab-menu a.active {
+  color: #000;
+}
+
+.tab-menu a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1.5px;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* 제목 */
+h1 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-bottom: 64px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 72px;
+  margin-bottom: 20px;
+  letter-spacing: -0.2px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: #3a3a3c;
+}
+
+/* 본문 (TODO: 약관 내용 어차피 바꿔야함..) */
+p {
+  font-size: 16px;
+  color: #3a3a3c;
+  margin-bottom: 16px;
+}
+
+/* 표 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 28px 0 48px 0;
+  font-size: 15px;
+}
+
+th, td {
+  padding: 16px 12px;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  color: #1d1d1f;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+td {
+  border-bottom: 1px solid #f2f2f7;
+  color: #3a3a3c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .container { margin: 80px auto; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 20px; }
+  .tab-menu { font-size: 15px; gap: 20px; }
+}
 </style>
 </head>
+
 <body>
+<div class="container">
 
-<h1>링큐 이용약관 및 개인정보처리방침</h1>
+  <div class="tab-menu">
+    <a href="/terms.html" class="active">이용약관</a>
+    <a href="/privacy.html">개인정보처리방침</a>
+  </div>
 
-<nav>
-  <a href="#terms">이용약관</a>
-  <a href="#privacy">개인정보처리방침</a>
-</nav>
+  <h1>링큐(LINK:U) 서비스 이용약관</h1>
 
-<div id="terms" class="section">
-<h2>1. 이용약관</h2>
-<p>여기에 이용약관 전문 붙여넣기</p>
+  <p>
+    본 약관은 링큐(이하 “회사”)가 제공하는 링큐(LINK:U) 서비스의 이용과 관련하여 
+    회사와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+  </p>
+
+  <h2>제 1 조 (목적)</h2>
+  <p>
+    본 약관은 회사가 제공하는 링크 콘텐츠 저장 및 AI 기반 큐레이션 서비스 링큐(LINK:U)의 
+    이용 조건 및 절차, 회사와 회원 간의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.
+  </p>
+
+  <h2>제 2 조 (용어의 정의)</h2>
+  <p>1. “서비스”란 회사가 제공하는 링큐 모바일 애플리케이션 및 관련 제반 서비스를 의미합니다.</p>
+  <p>2. “회원”이란 본 약관에 동의하고 회사와 이용 계약을 체결한 자를 말합니다.</p>
+  <p>3. “콘텐츠”란 회원이 서비스 내에 저장·생성·공유하는 링크, 텍스트, 이미지 등 모든 정보를 의미합니다.</p>
+  <p>4. “큐레이션”이란 회원의 저장 데이터, 감정·상황 입력 등을 기반으로 AI가 추천하는 콘텐츠를 의미합니다.</p>
+  <p>5. “계정”이란 회원 식별 및 서비스 이용을 위하여 생성된 소셜 로그인·이메일 기반 식별 수단을 말합니다.</p>
+
+  <h2>제 3 조 (약관의 효력 및 변경)</h2>
+  <p>1. 본 약관은 회원가입 과정에서 게시함으로써 효력이 발생합니다.</p>
+  <p>2. 회사는 관련 법령을 위배하지 않는 범위에서 약관을 개정할 수 있으며, 변경 시 7일 전(중대한 사항은 30일 전) 공지합니다.</p>
+  <p>3. 회원이 변경된 약관에 동의하지 않는 경우 회원 탈퇴를 요청할 수 있습니다.</p>
+  <p>4. 시행일 이후 7일 이내 거부 의사를 표시하지 않고 서비스를 계속 이용하는 경우 동의한 것으로 봅니다.</p>
+
+  <h2>제 4 조 (이용계약의 체결)</h2>
+  <p>1. 이용계약은 회원가입 완료 시 체결됩니다.</p>
+  <p>2. 다음의 경우 이용계약을 거부 또는 해지할 수 있습니다.</p>
+  <p>- 타인의 정보를 도용한 경우</p>
+  <p>- 서비스 운영을 고의로 방해한 경우</p>
+  <p>- 관련 법령 또는 본 약관을 위반한 경우</p>
+
+  <h2>제 5 조 (회원가입 및 계정 관리)</h2>
+  <p>1. 회원가입은 카카오, 구글 소셜 로그인 또는 이메일 로그인을 통해 이루어집니다.</p>
+  <p>2. 계정 정보 변경 시 즉시 수정해야 합니다.</p>
+  <p>3. 계정은 제3자에게 양도 또는 공유할 수 없습니다.</p>
+
+  <h2>제 6 조 (서비스의 제공 및 변경)</h2>
+  <p>- 링크 저장 및 관리</p>
+  <p>- AI 기반 콘텐츠 요약 및 카테고리 분류</p>
+  <p>- 감정·상황 기반 콘텐츠 큐레이션</p>
+  <p>- 콘텐츠 공유 기능</p>
+  <p>회사는 필요 시 서비스 일부 또는 전부를 변경·중단할 수 있습니다.</p>
+
+  <h2>제 7 조 (서비스 이용 제한)</h2>
+  <p>관련 법령 위반 또는 서비스 운영 방해 시 이용을 제한할 수 있습니다.</p>
+
+  <h2>제 8 조 (콘텐츠의 권리 및 책임)</h2>
+  <p>1. 콘텐츠 저작권은 해당 저작권자에게 귀속됩니다.</p>
+  <p>2. 회원은 법령에 위반되지 않도록 콘텐츠를 이용해야 합니다.</p>
+  <p>3. 회사는 서비스 운영 목적 범위 내에서만 콘텐츠를 처리합니다.</p>
+  <p>4. 법령 위반 책임은 회원에게 있습니다.</p>
+
+  <h2>제 9 조 (개인정보 보호)</h2>
+  <p>개인정보 처리에 관한 사항은 개인정보처리방침에 따릅니다.</p>
+
+  <h2>제 10 조 (마케팅 정보 수신)</h2>
+  <p>선택 동의 시 마케팅 정보를 발송할 수 있으며 언제든 철회 가능합니다.</p>
+
+  <h2>제 11 조 (계약 해지 및 회원 탈퇴)</h2>
+  <p>회원은 언제든 탈퇴할 수 있으며 개인정보는 처리방침에 따라 처리됩니다.</p>
+
+  <h2>제 12 조 (면책 조항)</h2>
+  <p>천재지변, 시스템 장애 등에 대해 회사는 책임지지 않습니다.</p>
+  <p>AI 기반 요약·추천 결과는 참고용이며 정확성을 보장하지 않습니다.</p>
+
+  <h2>제 13 조 (준거법 및 관할)</h2>
+  <p>본 약관은 대한민국 법령을 준거법으로 하며 관할 법원은 민사소송법에 따릅니다.</p>
+
+  <h3>[부칙]</h3>
+  <p>본 약관은 2026년 0X월 XX일부터 시행됩니다.</p>
+
 </div>
-
-<div id="privacy" class="section">
-<h2>2. 개인정보처리방침</h2>
-<p>여기에 개인정보처리방침 전문 붙여넣기</p>
-</div>
-
-<div class="section">
-<h2>3. 문의</h2>
-<p>이메일: dainie5@naver.com </p>
-</div>
-
-<div class="section">
-<p>시행일: 2026년 월 일</p>
-</div>
-
 </body>
 </html>
