@@ -19,6 +19,12 @@ body {
   line-height: 1.8;
 }
 
+/* 긴 문단/URL 줄바꿈 최적화 */
+* {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
 .container {
   max-width: 760px;
   margin: 120px auto;
@@ -29,8 +35,10 @@ body {
 .tab-menu {
   display: flex;
   gap: 28px;
-  margin-bottom: 72px;
+  margin-bottom: 56px;
   font-size: 17px;
+  flex-wrap: wrap;
+  row-gap: 12px;
 }
 
 .tab-menu a {
@@ -38,7 +46,8 @@ body {
   color: #8e8e93;
   font-weight: 500;
   position: relative;
-  transition: all 0.3s ease;
+  transition: color 0.25s ease;
+  white-space: nowrap;
 }
 
 .tab-menu a:hover {
@@ -65,22 +74,20 @@ h1 {
   font-size: 34px;
   font-weight: 600;
   letter-spacing: -0.3px;
-  margin-bottom: 64px;
+  margin: 0 0 56px 0;
 }
 
 h2 {
   font-size: 22px;
   font-weight: 600;
-  margin-top: 72px;
-  margin-bottom: 20px;
+  margin: 64px 0 16px 0;
   letter-spacing: -0.2px;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 12px;
+  margin: 40px 0 12px 0;
   color: #3a3a3c;
 }
 
@@ -88,7 +95,7 @@ h3 {
 p {
   font-size: 16px;
   color: #3a3a3c;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
 }
 
 /* 리스트 */
@@ -99,7 +106,9 @@ ul, ol {
   font-size: 16px;
 }
 
-li { margin: 8px 0; }
+li {
+  margin: 8px 0;
+}
 
 /* 표 */
 table {
@@ -125,15 +134,32 @@ td {
   color: #3a3a3c;
 }
 
+/* footer */
+.footer {
+  margin-top: 96px;
+  padding-top: 28px;
+  border-top: 1px solid #e5e5ea;
+  text-align: center;
+  font-size: 13px;
+  color: #8e8e93;
+}
+
+.footer span {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #8e8e93;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 @media (max-width: 600px) {
   .container { margin: 80px auto; }
-  h1 { font-size: 26px; }
-  h2 { font-size: 20px; }
-  .tab-menu { font-size: 15px; gap: 20px; }
+  h1 { font-size: 26px; margin-bottom: 44px; }
+  h2 { font-size: 20px; margin-top: 52px; }
+  .tab-menu { font-size: 15px; gap: 18px; margin-bottom: 44px; }
 }
 </style>
 </head>
@@ -141,9 +167,8 @@ html {
 <body>
 <div class="container">
 
+  <!-- 탭 중복 제거: 3개만 유지 + 상대경로 통일 -->
   <div class="tab-menu">
-    <a href="/terms.html" class="active">이용약관</a>
-    <a href="/privacy.html">개인정보처리방침</a>
     <a href="terms.html" class="active">이용약관</a>
     <a href="privacy.html">개인정보처리방침</a>
     <a href="marketing.html">마케팅 수신동의</a>
@@ -275,7 +300,7 @@ html {
   <h3>[부칙]</h3>
   <p>본 약관은 2026년 0X월 XX일부터 시행됩니다.</p>
 
-    <!-- footer -->
+  <!-- footer -->
   <div class="footer">
     © 2026 LinkU. All rights reserved.
     <span>Powered by LinkU</span>
