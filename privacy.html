@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마케팅 수신동의 | 링큐</title>
-  <meta name="description" content="링큐(LINK:U) 마케팅 정보 수신 동의">
+  <title>개인정보처리방침 | 링큐</title>
+  <meta name="description" content="링큐(LINK:U) 개인정보처리방침">
   <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2">
 
   <style>
@@ -14,8 +14,6 @@
       --text-muted: #8e8e93;
       --line-main: #e5e5ea;
       --line-soft: #f2f2f7;
-      --badge-bg: #f2f2f7;
-      --badge-text: #6e6e73;
     }
 
     * {
@@ -91,32 +89,12 @@
       border-bottom: 1px solid var(--line-main);
     }
 
-    .hero-title {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 12px;
-    }
-
     h1 {
       margin: 0;
       font-size: 34px;
       font-weight: 700;
       line-height: 1.3;
       letter-spacing: -0.4px;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      height: 30px;
-      padding: 0 12px;
-      border-radius: 999px;
-      background: var(--badge-bg);
-      color: var(--badge-text);
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 1;
     }
 
     .hero-desc {
@@ -135,14 +113,21 @@
       letter-spacing: -0.25px;
     }
 
+    h3 {
+      margin: 32px 0 12px;
+      color: var(--text-body);
+      font-size: 18px;
+      font-weight: 600;
+    }
+
     p {
       margin: 0 0 16px;
       color: var(--text-body);
       font-size: 16px;
     }
 
-    ul,
-    ol {
+    ol,
+    ul {
       margin: 0 0 18px 28px;
       padding-left: 10px;
       color: var(--text-body);
@@ -152,6 +137,45 @@
     li {
       margin: 10px 0;
       padding-left: 4px;
+    }
+
+    .note {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin: 24px 0 32px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+      width: 100%;
+      min-width: 560px;
+      border-collapse: collapse;
+      font-size: 15px;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      padding: 16px 14px;
+      color: var(--text-body);
+      line-height: 1.7;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      border-bottom: 1px solid var(--line-main);
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    td {
+      border-bottom: 1px solid var(--line-soft);
     }
 
     .footer {
@@ -194,15 +218,16 @@
         font-size: 21px;
       }
 
-      .badge {
-        height: 28px;
-        font-size: 13px;
-      }
-
       p,
       ol,
-      ul {
+      ul,
+      table {
         font-size: 15px;
+      }
+
+      th,
+      td {
+        padding: 14px 10px;
       }
     }
   </style>
@@ -212,61 +237,235 @@
   <main class="container">
     <nav class="tab-menu" aria-label="약관 메뉴">
       <a href="./terms.html">이용약관</a>
-      <a href="./index.html">개인정보처리방침</a>
-      <a href="./marketing.html" class="active" aria-current="page">마케팅 수신동의</a>
+      <a href="./index.html" class="active" aria-current="page">개인정보처리방침</a>
+      <a href="./marketing.html">마케팅 수신동의</a>
     </nav>
 
     <section class="hero">
-      <div class="hero-title">
-        <h1>마케팅 정보 수신 동의</h1>
-        <span class="badge">선택</span>
-      </div>
-
+      <h1>링큐(LINK:U) 개인정보 처리방침</h1>
       <p class="hero-desc">
-        링큐(LINK:U)(이하 “회사”)는 서비스와 관련된 이벤트, 혜택, 신규 기능 안내 등
-        마케팅 정보를 제공하기 위하여 아래와 같이 개인정보를 수집·이용합니다.
+        링큐(이하 “회사”)는 「개인정보 보호법」 등 관련 법령을 준수하며 이용자의 개인정보를 보호하고 권익을 보호하기 위하여 다음과 같은 개인정보 처리방침을 수립·공개합니다.
       </p>
     </section>
 
-    <p>
-      본 동의는 선택 사항이며, 이용자는 동의를 거부할 권리가 있습니다.
-      동의를 거부하더라도 서비스의 기본적인 이용에는 제한이 없습니다.
-    </p>
+    <h2>제 1 조 (개인정보의 수집 항목)</h2>
+    <p>회사는 서비스 제공을 위해 필요한 최소한의 개인정보를 수집합니다.</p>
 
-    <h2>1. 수집 및 이용 항목</h2>
+    <h3>① 회원가입 및 로그인 시</h3>
+    <p><strong>필수 수집 항목</strong></p>
+    <ul>
+      <li>소셜 로그인 식별자(카카오, Google, 네이버)</li>
+      <li>이메일 주소</li>
+      <li>프로필 이미지</li>
+    </ul>
+
+    <h3>② 서비스 이용 과정에서 자동 수집되는 정보</h3>
+    <ul>
+      <li>기기 정보(OS 버전, 기기 모델, 앱 버전)</li>
+      <li>서비스 이용 기록</li>
+      <li>접속 로그</li>
+      <li>IP 주소</li>
+      <li>오류 로그</li>
+    </ul>
+
+    <h3>③ 고객 문의 및 피드백 접수 시</h3>
+    <ul>
+      <li>이메일 주소</li>
+      <li>문의 내용</li>
+    </ul>
+
+    <h3>④ 마케팅 정보 수신 동의 시 (선택)</h3>
     <ul>
       <li>이메일 주소</li>
       <li>앱 푸시 알림 토큰</li>
     </ul>
 
-    <h2>2. 이용 목적</h2>
+    <p class="note">
+      ※ 이용자는 선택 항목에 대해 동의를 거부할 수 있으며, 동의하지 않아도 기본적인 서비스 이용에는 제한이 없습니다.
+    </p>
+
+    <h2>제 2 조 (개인정보의 수집 방법)</h2>
+    <p>회사는 다음과 같은 방법으로 개인정보를 수집합니다.</p>
     <ul>
-      <li>이벤트 및 프로모션 안내</li>
-      <li>신규 서비스 및 기능 안내</li>
-      <li>서비스 관련 혜택 및 업데이트 정보 제공</li>
+      <li>회원가입 및 서비스 이용 과정에서 이용자가 직접 입력</li>
+      <li>서비스 이용 과정에서 자동 생성 및 수집</li>
+      <li>고객센터(이메일, 설문 폼 등)를 통한 문의 접수</li>
     </ul>
 
-    <h2>3. 보유 및 이용 기간</h2>
-    <p>마케팅 정보 수신 동의 시점부터 다음 중 하나의 시점까지 보관 및 이용됩니다.</p>
+    <h2>제 3 조 (개인정보의 이용 목적)</h2>
+    <p>회사는 수집한 개인정보를 다음의 목적을 위해 사용합니다.</p>
+    <ol>
+      <li>회원 식별 및 본인 확인</li>
+      <li>서비스 제공 및 기능 운영</li>
+      <li>링크 콘텐츠 저장 및 관리</li>
+      <li>개인 맞춤형 콘텐츠 큐레이션 제공</li>
+      <li>AI 기반 콘텐츠 분류, 요약 및 추천 기능 제공</li>
+      <li>고객 문의 응대 및 공지사항 전달</li>
+      <li>서비스 이용 분석 및 품질 개선</li>
+      <li>이벤트 및 신규 기능 안내 등 마케팅 정보 제공 (선택 동의 시)</li>
+    </ol>
+
+    <h2>제 4 조 (개인정보의 보유 및 이용 기간)</h2>
+    <p>
+      회사는 개인정보의 수집 및 이용 목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.
+      다만 관계 법령에 따라 일정 기간 보관해야 하는 경우 다음과 같이 보관합니다.
+    </p>
+
+    <div class="table-wrap" tabindex="0" aria-label="개인정보 보유 기간 표">
+      <table>
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>보유 기간</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>회원 정보</td>
+            <td>회원 탈퇴 시까지</td>
+          </tr>
+          <tr>
+            <td>고객 문의 기록</td>
+            <td>처리 완료 후 1년</td>
+          </tr>
+          <tr>
+            <td>접속 로그</td>
+            <td>3개월 (통신비밀보호법)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>제 5 조 (개인정보의 제3자 제공)</h2>
+    <p>회사는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다.</p>
+    <p>다만 다음의 경우에는 예외로 합니다.</p>
+    <ol>
+      <li>이용자가 사전에 동의한 경우</li>
+      <li>법령에 따라 제공이 요구되는 경우</li>
+    </ol>
+
+    <h2>제 6 조 (개인정보 처리의 위탁)</h2>
+    <p>회사는 서비스 제공을 위해 다음과 같이 개인정보 처리 업무를 위탁할 수 있습니다.</p>
+
+    <div class="table-wrap" tabindex="0" aria-label="개인정보 처리 위탁 표">
+      <table>
+        <thead>
+          <tr>
+            <th>수탁업체</th>
+            <th>위탁 업무</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kakao Corp.</td>
+            <td>소셜 로그인 인증</td>
+          </tr>
+          <tr>
+            <td>Google LLC</td>
+            <td>소셜 로그인 인증</td>
+          </tr>
+          <tr>
+            <td>NAVER Corp.</td>
+            <td>소셜 로그인 인증</td>
+          </tr>
+          <tr>
+            <td>Amazon Web Services (AWS)</td>
+            <td>서버 운영 및 데이터 저장</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note">
+      ※ 회사는 위탁 계약 시 개인정보 보호 관련 법령을 준수하도록 관리·감독합니다.
+      위탁 업무 내용 또는 수탁업체가 변경될 경우 본 개인정보 처리방침을 통해 안내합니다.
+    </p>
+
+    <h2>제 7 조 (개인정보의 국외 이전)</h2>
+    <p>회사는 클라우드 서버 운영을 위해 개인정보를 국외로 이전할 수 있습니다.</p>
+
+    <div class="table-wrap" tabindex="0" aria-label="개인정보 국외 이전 표">
+      <table>
+        <thead>
+          <tr>
+            <th>이전받는 자</th>
+            <th>이전 국가</th>
+            <th>이전 항목</th>
+            <th>이용 목적</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Amazon Web Services, Inc.</td>
+            <td>미국</td>
+            <td>서비스 이용 과정에서 생성되는 데이터</td>
+            <td>클라우드 서버 운영 및 데이터 저장</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>회사는 개인정보 보호법 등 관련 법령을 준수하여 개인정보가 안전하게 관리되도록 노력하고 있습니다.</p>
+
+    <h2>제 8 조 (AI 서비스 이용 관련 개인정보 처리)</h2>
+    <p>회사는 서비스 내 일부 기능에서 <strong>AI 기반 콘텐츠 분석 및 추천 기능</strong>을 제공할 수 있습니다.</p>
+    <p>AI 기능 제공 과정에서 다음과 같은 데이터가 처리될 수 있습니다.</p>
     <ul>
-      <li>이용자가 수신 동의를 철회한 경우</li>
-      <li>회원 탈퇴 시</li>
+      <li>사용자가 저장한 링크 콘텐츠</li>
+      <li>콘텐츠 제목 또는 설명</li>
+    </ul>
+    <p>
+      단, 이용자의 <strong>이름, 이메일 등 직접 식별 가능한 개인정보는 AI 처리 과정에서 전달되지 않습니다.</strong>
+    </p>
+
+    <h2>제 9 조 (이용자의 권리 및 행사 방법)</h2>
+    <p>이용자는 언제든지 다음 권리를 행사할 수 있습니다.</p>
+    <ol>
+      <li>개인정보 열람 요청</li>
+      <li>개인정보 정정 요청</li>
+      <li>개인정보 삭제 요청</li>
+      <li>개인정보 처리 정지 요청</li>
+      <li>회원 탈퇴</li>
+    </ol>
+    <p>권리 행사는 앱 내 설정 또는 고객센터를 통해 요청할 수 있습니다.</p>
+
+    <h2>제 10 조 (개인정보의 파기 절차 및 방법)</h2>
+    <p>회사는 개인정보 보유 기간이 경과하거나 처리 목적이 달성된 경우 지체 없이 해당 정보를 파기합니다.</p>
+    <ul>
+      <li>전자적 파일 형태: 복구 불가능한 방식으로 영구 삭제</li>
+      <li>종이 문서: 분쇄 또는 소각</li>
     </ul>
 
-    <h2>4. 동의 거부 및 철회 안내</h2>
-    <p>이용자는 언제든지 마케팅 정보 수신 동의를 거부하거나 철회할 수 있습니다.</p>
-    <p>동의 철회 방법은 다음과 같습니다.</p>
+    <h2>제 11 조 (개인정보의 안정성 확보 조치)</h2>
+    <p>회사는 개인정보 보호를 위해 다음과 같은 조치를 시행하고 있습니다.</p>
     <ul>
-      <li>앱 내 설정 메뉴에서 마케팅 수신 동의 해제</li>
-      <li>고객센터 이메일을 통한 요청</li>
+      <li>개인정보 접근 권한 최소화</li>
+      <li>개인정보 접근 기록 관리</li>
+      <li>암호화 통신(HTTPS) 적용</li>
+      <li>내부 관리계획 수립 및 운영</li>
     </ul>
-    <p>동의 철회 시 이후부터는 마케팅 정보가 발송되지 않습니다.</p>
 
-    <h2>5. 발송 방법</h2>
+    <h2>제 12 조 (개인정보 보호책임자)</h2>
+    <p>회사는 개인정보 보호 관련 업무를 총괄하기 위하여 다음과 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+    <p><strong>개인정보 보호책임자</strong></p>
     <ul>
-      <li>이메일</li>
-      <li>앱 푸시 알림</li>
+      <li>성명: 윤다인</li>
+      <li>이메일: linku.cs@gmail.com </li>
     </ul>
+    <p>이용자는 개인정보 보호 관련 문의, 불만 처리, 피해 구제 등을 위 연락처로 문의할 수 있습니다.</p>
+
+    <h2>제 13 조 (개인정보 처리방침의 변경)</h2>
+    <p>
+      본 개인정보 처리방침은 법령, 정책 또는 서비스 변경에 따라 개정될 수 있으며,
+      변경 시 서비스 내 공지사항을 통해 사전에 안내합니다.
+    </p>
+    <p>
+      중요한 변경이 있을 경우 최소 <strong>7일 전</strong> 공지하며,
+      이용자 권리에 중대한 영향을 미치는 변경의 경우 <strong>30일 전</strong> 공지합니다.
+    </p>
+
+    <h3>[부칙]</h3>
+    <p>본 개인정보 처리방침은 2026년 0X월 XX일부터 시행됩니다.</p>
 
     <footer class="footer">
       © 2026 LinkU. All rights reserved.
